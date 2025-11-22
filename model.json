@@ -1,0 +1,33 @@
+{
+    "name": "ms-model-echo-app",
+    "repo_url": "https://github.com/znetlink/ms-model-echo-app",
+    "version": "0.1.0",
+    "description": "EchoApp模型",
+    "author": "ZNetLink",
+    "email": "jiazequn@znetlink.com",
+    "license": "GPL-3.0",
+    "labels": [
+        "App",
+        "应用层"
+    ],
+    "content": {
+        "iconLibraries": [],
+        "scenarios": [],
+        "platforms": [],
+        "devices": [],
+        "processes": [
+            {
+                "model": "models/echo_app.pr.m",
+                "pyPkgPath": "pycodes/echo_app"
+            }
+        ],
+        "links": [],
+        "traffics": [],
+        "modulations": [],
+        "packets": [
+            "models/echo_app.pkt.m"
+        ],
+        "icis": [],
+        "metrics": []
+    }
+}

@@ -19,15 +19,6 @@ class EchoAppProcess:
         self.role: Optional[str] = None
         self.dest_addr: Optional[int] = None
 
-    def init(self, builder: ms.ProcessBuilder) -> None:
-        builder.begin("wait")
-        builder.add_state("wait", self.enter_wait, None)
-        builder.add_state("init", self.enter_init, self.exit_init)
-        builder.add_state("idle", self.enter_idle, self.exit_idle)
-        builder.add_transition("wait", "init", lambda: True)
-        builder.add_transition("init", "idle", lambda: True)
-        builder.add_transition("idle", "idle", lambda: True)
-
     @ms.state_enter("wait", begin=True)
     def enter_wait(self) -> None:
         ms.intrpt_schedule_self(ms.sim_time() + 0.1, 0)

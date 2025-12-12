@@ -80,15 +80,15 @@ class EchoAppProcess:
         else:
             logger.warning("EchoApp: received unexpected interrupt type %s", intr_type)
             
-    @ms.transition("wait", "init")
+    @ms.transition("wait", "init", "19214e68-8b84-4722-b643-389d350ada1a")
     def transition_init_idle(self) -> bool:
         return True
     
-    @ms.transition("init", "idle")
+    @ms.transition("init", "idle", "97edbda3-9f77-4d46-a1a9-81f05247901b")
     def transition_idle_init(self) -> bool:
         return True
     
-    @ms.transition("idle", "idle")
+    @ms.transition("idle", "idle", "e4ffa9f7-46c4-420b-b2c7-3975bdb231cb")
     def transition_idle_idle(self) -> bool:
         return True
 

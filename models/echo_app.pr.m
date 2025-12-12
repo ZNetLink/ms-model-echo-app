@@ -1,4 +1,5 @@
 {
+  "modelVersion": 2,
   "kind": "python",
   "interface": {
     "begsim_intrpt": true,
@@ -156,13 +157,28 @@
           }
         ],
         "initialMarker": false
+      },
+      {
+        "id": "55725d38-d3a2-4f9f-8540-f4f676bdaa7b",
+        "source": {
+          "x": 160,
+          "y": 288
+        },
+        "target": {
+          "cell": "0c46c568-8bd6-4f00-8bda-1fc1cbe7100f"
+        },
+        "condition": "",
+        "handlerCreated": false,
+        "connector": null,
+        "vertices": [],
+        "initialMarker": true
       }
     ],
-    "initialStateId": null
+    "initialStateId": "0c46c568-8bd6-4f00-8bda-1fc1cbe7100f"
   },
   "pythonPackageFiles": [
-    "src/echo_app/__init__.py",
     "README.md",
-    "pyproject.toml"
+    "pyproject.toml",
+    "src/echo_app/__init__.py"
   ]
 }
